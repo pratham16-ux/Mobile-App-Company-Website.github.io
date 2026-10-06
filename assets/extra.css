@@ -2,7 +2,7 @@
 
 /* ---- sign up ---- */
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.opt{color:var(--mist);font-weight:500;font-size:.85rem}
+.optl{color:var(--mist);font-weight:500;font-size:.85rem}
 .phone-in{display:flex;align-items:stretch;border:1.5px solid var(--line);border-radius:14px;background:#fff;overflow:hidden;transition:border-color .25s,box-shadow .25s}
 .phone-in:focus-within{border-color:var(--brand);box-shadow:0 0 0 4px rgba(79,59,219,.12)}
 .phone-in span{display:grid;place-items:center;padding:0 14px;background:var(--tint);font-weight:700;color:var(--brand-d)}
@@ -25,6 +25,7 @@
 .tick path{fill:none;stroke:#22b573;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:40;stroke-dashoffset:40;animation:draw .5s var(--ease) .7s forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
 @media(max-width:560px){.row2{grid-template-columns:1fr}}
+@media(max-width:400px){.nf-bolt{display:none}.nf-screen b{font-size:.8rem}}
 
 /* ---- 404 ---- */
 .nf{position:relative;min-height:100svh;display:flex;align-items:center;padding:150px 0 80px;overflow:hidden;isolation:isolate;background:radial-gradient(900px 500px at 85% 0%,rgba(123,92,245,.16),transparent 60%),radial-gradient(700px 400px at 0% 100%,rgba(201,154,59,.16),transparent 60%),var(--bg)}
