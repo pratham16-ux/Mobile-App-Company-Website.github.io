@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Login | Stackly client and admin portal</title>
+<meta name="description" content="Sign in to your Stackly client or admin dashboard.">
+<meta name="theme-color" content="#F7F8FC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://wsrv.nl">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<main id="main">
+<section class="auth"><div class="container"><div class="auth-grid">
+  <aside class="auth-side"><div class="imgbox"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1556742049-0cfed4f6a45d&w=800&h=1000&fit=cover&output=webp&q=52" width="800" height="1000" alt="Person using a mobile app" loading="lazy" decoding="async" class="" onerror="this.classList.add('img-fail')"></div>
+    <h2>One place for your app project</h2>
+    <p>Follow every milestone, pay invoices and talk to the team without chasing emails.</p>
+    <ul><li>Live project progress and milestones</li><li>Invoices you can pay and download</li><li>Support tickets with real replies</li></ul>
+  </aside>
+  <div class="auth-card">
+    <a class="logo auth-logo" href="index.html" aria-label="Stackly home"><img src="https://wsrv.nl/?url=https://snabsolutions.in/wp-content/uploads/2026/02/stackly-snab-solutions.png&w=280&output=webp&q=85&fit=cover" height="55" alt="Stackly"></a>
+    <div class="info" id="linfo" role="status"></div>
+    <div class="info" id="signed" hidden></div>
+    <h1 id="title">Client login</h1>
+    <p class="sub" id="sub">Track your projects, invoices and messages.</p>
+    <div class="seg" id="seg" data-role="client" role="tablist" aria-label="Login type">
+      <button type="button" role="tab" aria-selected="true" data-role="client"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg> Client login</button>
+      <button type="button" role="tab" aria-selected="false" data-role="admin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg> Admin login</button>
+    </div>
+    <form class="contact" id="loginForm" novalidate>
+      <div class="field"><label for="lid">Email address</label><input id="lid" type="email" inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false" placeholder="you@company.com"></div>
+      <div class="field"><label for="lpw">Password</label><div class="pw"><input id="lpw" type="password" autocomplete="current-password"><button type="button" id="toggle" aria-label="Show password">Show</button></div></div>
+      <div class="auth-row"><label class="check"><input type="checkbox" id="remember"> Remember me</label><button type="button" class="link-btn" id="forgot">Forgot password?</button></div>
+      <div class="err" id="lerr" role="alert"></div>
+      <button class="btn btn-gold" id="lbtn" type="submit">Sign in as client</button>
+    </form>
+    <div class="demo"><span>Demo mode: <b>any email and any password</b> works. Pick Client or Admin first, then sign in.</span><button class="btn-line btn-xs" type="button" id="useDemo">Fill sample</button></div>
+    <p class="back-note">New to Stackly? <a href="signup.html">Create an account</a></p>
+    <p class="back-note"><a href="index.html">Back to the website</a> &nbsp;|&nbsp; <a href="contact.html">Questions? Contact us</a></p>
+  </div>
+</div></div></section>
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/login.js"></script>
+</body>
+</html>

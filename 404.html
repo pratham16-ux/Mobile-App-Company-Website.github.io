@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page not found | Stackly</title>
+<meta name="description" content="The page you are looking for does not exist. Head back to the Stackly home page.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F7F8FC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://wsrv.nl">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/extra.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="progress"></div>
+
+<main id="main">
+<section class="nf">
+  <i class="orb o1" aria-hidden="true"></i><i class="orb o2" aria-hidden="true"></i>
+  <div class="container nf-grid">
+    <div class="nf-copy">
+      <div class="eyebrow"><span class="pulse"></span>Error 404</div>
+      <h1>This screen <span class="gold-t">does not exist</span></h1>
+      <p class="lead">The page you tried to open may have moved, been renamed, or never existed. Let's get you back to something real.</p>
+      <p class="nf-path" id="nfPath" hidden>Requested: <code></code></p>
+      <div class="hero-cta"><a class="btn btn-gold" href="index.html">Back to home</a><a class="btn btn-ghost" href="contact.html">Report a broken link</a></div>
+      <ul class="nf-links" aria-label="Popular pages"><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="about.html">About us</a></li><li><a href="login.html">Client login</a></li><li><a href="signup.html">Create account</a></li></ul>
+    </div>
+    <div class="nf-art" aria-hidden="true">
+      <div class="nf-num"><span>4</span>
+        <div class="nf-phone"><div class="nf-screen"><div class="nf-bolt"></div><b>Oops</b><small>No signal</small><div class="nf-bars"><i></i><i></i><i></i></div></div></div>
+        <span>4</span></div>
+      <div class="nf-float f1">Lost</div><div class="nf-float f2">?</div><div class="nf-float f3">Retry</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<script src="assets/main.js"></script>
+<script>
+(function(){var p=location.pathname.replace(/^\/+/,'');if(!p||/404(\.html)?$/.test(p))return;var b=document.getElementById('nfPath');b.hidden=false;b.querySelector('code').textContent='/'+p.slice(0,80);})();
+</script>
+</body>
+</html>

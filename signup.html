@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Create account | Stackly client portal</title>
+<meta name="description" content="Create your Stackly client account to track projects, invoices and messages.">
+<meta name="theme-color" content="#F7F8FC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://wsrv.nl">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/extra.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<main id="main">
+<section class="auth"><div class="container"><div class="auth-grid">
+  <aside class="auth-side"><div class="imgbox"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1512941937669-90a1b58e7e9c&w=800&h=1100&fit=cover&output=webp&q=52" width="800" height="1100" alt="Person using a mobile app" loading="lazy" decoding="async" onerror="this.classList.add('img-fail')"></div>
+    <h2>Start your app journey with Stackly</h2>
+    <p>Create a free client account and keep everything about your project in one place.</p>
+    <ul><li>See live progress and approve milestones</li><li>Pay invoices in INR and download GST receipts</li><li>Message the team without chasing emails</li></ul>
+  </aside>
+  <div class="auth-card">
+    <a class="logo auth-logo" href="index.html" aria-label="Stackly home"><img src="https://wsrv.nl/?url=https://snabsolutions.in/wp-content/uploads/2026/02/stackly-snab-solutions.png&w=280&output=webp&q=85&fit=cover" height="55" alt="Stackly"></a>
+    <div id="formView">
+      <h1>Create your account</h1>
+      <p class="sub">It takes less than a minute.</p>
+      <form class="contact" id="signupForm" novalidate>
+        <div class="row2">
+          <div class="field"><label for="sn">Full name</label><input id="sn" type="text" autocomplete="name" placeholder="Aarav Mehta"></div>
+          <div class="field"><label for="sc">Company <span class="opt">(optional)</span></label><input id="sc" type="text" autocomplete="organization" placeholder="Your company"></div>
+        </div>
+        <div class="field"><label for="se">Email address</label><input id="se" type="email" inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false" placeholder="you@company.com"></div>
+        <div class="field"><label for="sp">Mobile number <span class="opt">(optional)</span></label><div class="phone-in"><span>+91</span><input id="sp" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="10" placeholder="98765 43210"></div></div>
+        <div class="row2">
+          <div class="field"><label for="spw">Password</label><div class="pw"><input id="spw" type="password" autocomplete="new-password" placeholder="At least 8 characters"><button type="button" id="tg1" aria-label="Show password">Show</button></div>
+            <div class="meter" id="meter" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span class="hint" id="mtxt">Use 8+ characters with letters and numbers.</span></div>
+          <div class="field"><label for="spc">Confirm password</label><div class="pw"><input id="spc" type="password" autocomplete="new-password"><button type="button" id="tg2" aria-label="Show password">Show</button></div></div>
+        </div>
+        <label class="check terms"><input type="checkbox" id="sterms"> <span>I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</span></label>
+        <div class="err" id="serr" role="alert"></div>
+        <button class="btn btn-gold" id="sbtn" type="submit">Create new account</button>
+      </form>
+      <p class="back-note">Already have an account? <a href="login.html">Sign in</a> &nbsp;|&nbsp; <a href="index.html">Back to the website</a></p>
+    </div>
+    <div id="doneView" class="done" hidden>
+      <svg class="tick" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="M15 27l8 8 14-16"/></svg>
+      <h1>Account created</h1>
+      <p class="sub">Taking you to the login page. Sign in with your new email and password.</p>
+      <a class="btn btn-gold" href="login.html?msg=created">Go to login now</a>
+    </div>
+  </div>
+</div></div></section>
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/signup.js"></script>
+</body>
+</html>
